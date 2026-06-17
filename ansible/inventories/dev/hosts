@@ -1,0 +1,6 @@
+[app_servers]
+3.109.32.255
+
+[app_servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/nafreen/employee-management-key.pem

@@ -1,0 +1,10 @@
+---
+- import_tasks: create_directory.yml
+
+- import_tasks: install_java.yml
+
+- import_tasks: copy_jar.yml
+
+- import_tasks: create_service.yml
+
+- import_tasks: start_service.yml

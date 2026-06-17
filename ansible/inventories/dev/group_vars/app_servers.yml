@@ -1,0 +1,14 @@
+---
+app_name: employee-management
+
+app_directory: /opt/employee-management
+
+app_jar_name: app.jar
+
+java_package: openjdk-17-jre-headless
+
+service_name: employee-management
+
+app_port: 8080
+
+local_jar_path: /mnt/c/Users/A0097/Desktop/application-deployment/application/target/employee-management-0.0.1-SNAPSHOT.jar

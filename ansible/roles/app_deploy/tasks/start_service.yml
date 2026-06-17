@@ -1,0 +1,10 @@
+---
+- name: Reload systemd
+  systemd:
+    daemon_reload: true
+
+- name: Enable and start application service
+  systemd:
+    name: "{{ service_name }}"
+    enabled: true
+    state: started

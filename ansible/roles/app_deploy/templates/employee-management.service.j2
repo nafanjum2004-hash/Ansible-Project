@@ -1,0 +1,14 @@
+[Unit]
+Description=Employee Management Application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory={{ app_directory }}
+ExecStart=/usr/bin/java -jar {{ app_directory }}/{{ app_jar_name }}
+SuccessExitStatus=143
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+---
+- name: Create application directory
+  file:
+    path: "{{ app_directory }}"
+    state: directory
+    owner: ubuntu
+    group: ubuntu
+    mode: '0755'

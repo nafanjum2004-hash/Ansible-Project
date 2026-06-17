@@ -1,0 +1,27 @@
+# Java
+target/
+*.class
+*.jar
+
+# Maven
+.mvn/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
