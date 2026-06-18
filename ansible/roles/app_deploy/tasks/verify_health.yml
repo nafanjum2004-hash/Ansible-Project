@@ -1,0 +1,6 @@
+---
+- name: Verify application health endpoint
+  uri:
+    url: "http://localhost:{{ app_port }}/health"
+    method: GET
+    status_code: 200

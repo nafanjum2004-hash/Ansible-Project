@@ -1,8 +1,0 @@
----
-- name: Copy application jar
-  copy:
-    src: "{{ local_jar_path }}"
-    dest: "{{ app_directory }}/{{ app_jar_name }}"
-    owner: ubuntu
-    group: ubuntu
-    mode: '0755'

@@ -1,0 +1,5 @@
+---
+- name: Download application package
+  get_url:
+    url: "{{ app_package_url }}"
+    dest: "/tmp/application.zip"

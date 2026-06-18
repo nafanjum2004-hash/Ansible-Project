@@ -1,0 +1,10 @@
+---
+- name: Create application configuration file
+  copy:
+    dest: "{{ app_directory }}/application.properties"
+    content: |
+      server.port={{ app_port }}
+      spring.application.name={{ app_name }}
+    owner: ubuntu
+    group: ubuntu
+    mode: '0644'

@@ -3,7 +3,7 @@ app_name: employee-management
 
 app_directory: /opt/employee-management
 
-app_jar_name: app.jar
+app_jar_name: employee-management-0.0.1-SNAPSHOT.jar
 
 java_package: openjdk-17-jre-headless
 
@@ -12,3 +12,5 @@ service_name: employee-management
 app_port: 8080
 
 local_jar_path: /home/ubuntu/.jenkins/workspace/CI-CD/application/target/employee-management-0.0.1-SNAPSHOT.jar
+
+app_package_url: https://raw.githubusercontent.com/nafanjum2004-hash/Ansible-Project/main/application.zip
