@@ -1,6 +1,5 @@
 [app_servers]
-13.233.110.230
+3.6.41.80
 
 [app_servers:vars]
 ansible_user=ubuntu
-ansible_connection=local
