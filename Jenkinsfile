@@ -21,7 +21,7 @@ stages {
         sh '''
         PASSWORD=$(openssl rand -base64 12)
 
-        PASSWORD=$(openssl rand -base64 12)
+        
         echo "====================================="
         echo " GENERATED PASSWORD: $PASSWORD "
         echo "====================================="
