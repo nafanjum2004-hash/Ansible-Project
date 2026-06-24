@@ -21,7 +21,10 @@ stages {
         sh '''
         PASSWORD=$(openssl rand -base64 12)
 
-        echo "Generated Password: $PASSWORD"
+        PASSWORD=$(openssl rand -base64 12)
+        echo "====================================="
+        echo " GENERATED PASSWORD: $PASSWORD "
+        echo "====================================="
 
         sudo docker rm -f employee-app || true
 
