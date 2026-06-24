@@ -33,9 +33,13 @@ stages {
 
     stage('Health Check') {
         steps {
-            sh 'curl http://localhost:9090/health'
+            sh '''
+            sleep 20
+            curl http://localhost:9090/health
+            '''
         }
     }
+
 }
 
 post {
