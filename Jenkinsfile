@@ -19,12 +19,14 @@ stages {
         steps {
             dir('application') {
                 sh '''
-                sudo docker rm -f employee-app || true
-                sudo docker build -t employee-management-app .
-                sudo docker run -d \
-                -p 9090:9090 \
-                --name employee-app \
+                PASSWORD=$(openssl rand -base64 12)
+                echo "Generated Password: $PASSWORD"
+                sudo docker run -d 
+                -p 9090:9090 
+                -e APP_PASSWORD=$PASSWORD 
+                --name employee-app 
                 employee-management-app
+
                 '''
             }
         }
