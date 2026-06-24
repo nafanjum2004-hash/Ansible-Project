@@ -16,24 +16,19 @@ stages {
         }
     }
     stage('Deploy Docker') {
-steps {
-dir('application') {
-sh '''
-sudo docker rm -f employee-app || true
-
-```
-        sudo docker build -t employee-management-app .
-
-        sudo docker run -d \
-        -p 9090:9090 \
-        --name employee-app \
-        employee-management-app
-        '''
+        steps {
+            dir('application') {
+                sh '''
+                sudo docker rm -f employee-app || true
+                sudo docker build -t employee-management-app .
+                sudo docker run -d \
+                -p 9090:9090 \
+                --name employee-app \
+                employee-management-app
+                '''
+            }
+        }
     }
-}
-```
-
-}
 
 
     stage('Health Check') {
