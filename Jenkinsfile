@@ -1,7 +1,7 @@
 pipeline {
 agent any
 
-```
+
 tools {
     maven 'Maven'
 }
@@ -32,6 +32,6 @@ post {
         echo 'Build or Deployment Failed'
     }
 }
-```
+
 
 }
